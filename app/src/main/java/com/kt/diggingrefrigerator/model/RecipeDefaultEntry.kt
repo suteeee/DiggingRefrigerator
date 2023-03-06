@@ -3,7 +3,7 @@ package com.kt.diggingrefrigerator.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "RecipeDefualtInfo")
 data class RecipeDefaultEntry(
     @PrimaryKey(autoGenerate = true) val recipeCode: Int,
     val recipeName: String,

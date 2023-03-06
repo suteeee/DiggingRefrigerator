@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class AddIngredientDialog(override var _binding: DialogAddIngredientBinding?) : BaseDialog<DialogAddIngredientBinding>(R.layout.dialog_add_ingredient) {
+class AddIngredientDialog : BaseDialog<DialogAddIngredientBinding>(R.layout.dialog_add_ingredient) {
     val viewModel: AddIngredientViewModel by viewModels()
 
     override fun setupUI() {
